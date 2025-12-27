@@ -1,3 +1,19 @@
+![Status](https://img.shields.io/badge/status-active-success)
+![Community](https://img.shields.io/badge/community-driven-blue)
+![Purpose](https://img.shields.io/badge/focus-education%20%26%20utility-informational)
+![Pi Network](https://img.shields.io/badge/aligned%20with-Pi%20Network-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+# PiVerse AI
+
+![Status](...)
+![Community](...)
+![Purpose](...)
+![Pi Network](...)
+![License](...)
+
+PiVerse AI adalah asisten kecerdasan buatan berbasis komunitas...
+
 PiVerse AI
 
 PiVerse AI adalah asisten kecerdasan buatan berbasis komunitas yang dirancang untuk membantu memahami dan membangun ekosistem Pi Network, termasuk blockchain, Web3, dApps, dan konsep DeFi secara teknis, edukatif, dan bertanggung jawab.
