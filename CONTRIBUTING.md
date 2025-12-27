@@ -1,164 +1,73 @@
-PiVerse AI
+Contributing to PiVerse AI
 
-PiVerse AI adalah asisten kecerdasan buatan berbasis komunitas yang dirancang untuk membantu memahami dan membangun ekosistem Pi Network, termasuk blockchain, Web3, dApps, dan konsep DeFi secara teknis, edukatif, dan bertanggung jawab.
+Terima kasih atas minat Anda untuk berkontribusi pada PiVerse AI 🎉
 
-> PiVerse AI — Knowledge Engine for the Pi Ecosystem
+PiVerse AI adalah proyek community-driven yang berfokus pada edukasi, pengembangan teknis, dan literasi ekosistem Pi Network secara bertanggung jawab.
 
-
-
-
----
-
-🎯 Tujuan Proyek
-
-PiVerse AI dibangun untuk menjawab kebutuhan nyata komunitas Pi:
-
-Edukasi teknis Pi Network yang terstruktur
-
-Pendampingan developer dalam membangun Pi Apps
-
-Klarifikasi isu, hoaks, dan miskonsepsi
-
-Peningkatan literasi Web3 yang selaras dengan kebijakan Pi
-
-
-PiVerse AI bukan alat spekulasi, melainkan AI knowledge assistant.
+Kami menyambut kontribusi dari siapa pun yang memiliki niat baik dan selaras dengan nilai proyek.
 
 
 ---
 
-🧩 Fitur Utama
+🎯 Prinsip Dasar Kontribusi
 
-1️⃣ Pi Network Knowledge Engine
+Semua kontribusi WAJIB mengikuti prinsip berikut:
 
-Penjelasan Pi Network berbasis whitepaper & dokumentasi publik
+✅ Edukatif dan informatif
 
-Konsep Mainnet, KYC, Utility-Based Economy
+✅ Berbasis sumber publik & dapat diverifikasi
 
-Pi Browser & App Guidelines
+✅ Tidak spekulatif
 
-Smart contract & integrasi ekosistem (edukatif)
+✅ Tidak menyesatkan komunitas
 
-
-2️⃣ Developer Assistant Mode 👨‍💻
-
-Contoh alur autentikasi Pi SDK
-
-Penjelasan payment flow Pi Apps
-
-Best practice arsitektur dApps Pi
-
-Troubleshooting umum developer
-
-Template konsep aplikasi utilitas
+✅ Selaras dengan kebijakan & visi Pi Network
 
 
-3️⃣ Edukasi Web3 & DeFi (Konteks Pi)
-
-Penjelasan Web3 tanpa hype
-
-Perbandingan Pi vs blockchain lain (Ethereum, Stellar, dll)
-
-Edukasi DeFi yang tidak melanggar kebijakan Pi
+Kontribusi yang melanggar prinsip ini akan ditolak.
 
 
-4️⃣ Anti-Scam & Trust Awareness 🛡️
+---
 
-Deteksi pola scam (private key, janji listing, airdrop palsu)
+🧩 Jenis Kontribusi yang Diterima
 
-Edukasi keamanan untuk Pioneer
+Anda dapat berkontribusi dalam berbagai bentuk:
+
+📘 Dokumentasi
+
+Penjelasan konsep Pi Network
+
+Panduan developer Pi Apps
+
+Tutorial Pi SDK (frontend / backend)
+
+FAQ & troubleshooting
+
+
+👨‍💻 Teknis & Pengembangan
+
+Perbaikan struktur prompt AI
+
+Penambahan mode interaksi
+
+Optimalisasi UX/UI
+
+Arsitektur knowledge base
+
+
+🛡️ Keamanan & Edukasi Anti-Scam
+
+Pola scam terbaru di ekosistem Pi
 
 Template peringatan komunitas
 
+Edukasi best practice keamanan
 
 
----
+🌍 Community & Moderation
 
-🧭 Mode Interaksi
+Klarifikasi isu / hoaks
 
-PiVerse AI menyediakan beberapa mode penggunaan:
+Penulisan counter-narrative yang netral
 
-🧑‍🎓 Beginner Mode – Bahasa sederhana, edukatif
-
-👨‍💻 Developer Mode – Teknis & berbasis praktik
-
-🧭 Community Mode – Klarifikasi isu & counter hoaks
-
-
-
----
-
-🏗️ Arsitektur Teknis (High Level)
-
-Frontend: React / Next.js
-
-Backend: Node.js atau Python
-
-AI Layer: Prompt routing berbasis mode
-
-Knowledge Base: Dokumentasi kurasi (Markdown / JSON)
-
-
-Desain sistem mengutamakan akurasi, netralitas, dan kepatuhan ekosistem Pi.
-
-
----
-
-⚠️ Disclaimer Penting
-
-PiVerse AI BUKAN bagian dari Pi Core Team
-
-PiVerse AI TIDAK memberikan nasihat finansial
-
-PiVerse AI TIDAK menjanjikan harga, listing, atau keuntungan
-
-Semua informasi bersifat edukatif & berbasis sumber publik
-
-Pengguna tetap bertanggung jawab atas keputusan masing-masing
-
-
-
----
-
-🤝 Kontribusi
-
-Kontribusi terbuka untuk komunitas dengan prinsip:
-
-Edukatif
-
-Tidak spekulatif
-
-Tidak menyesatkan
-
-Selaras dengan visi Pi Network
-
-
-Silakan ajukan ide, dokumentasi, atau diskusi konstruktif.
-
-
----
-
-📜 Lisensi
-
-Proyek ini bersifat community-driven dan ditujukan untuk edukasi. Detail lisensi dapat disesuaikan (MIT / Apache / Custom Community License).
-
-
----
-
-🌱 Visi Jangka Panjang
-
-PiVerse AI ditujukan untuk berkembang menjadi:
-
-Knowledge Hub Pi Network
-
-Asisten builder Pi Apps
-
-Referensi klarifikasi narasi komunitas
-
-AI pendukung ekosistem utilitas Pi
-
-
-
----
-
-> Built for education. Powered by community. Aligned with Pi Network values.
+Penyempurnaan bahasa & istilah
