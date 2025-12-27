@@ -1,0 +1,202 @@
+Deployment Architecture (Kubernetes‑Ready)
+
+Dokumen ini menjelaskan konsep deployment PiVerse AI yang siap dijalankan di Kubernetes, termasuk struktur manifest, Helm chart, dan praktik terbaik produksi.
+
+
+---
+
+🎯 Tujuan
+
+Menyediakan arsitektur deployment yang scalable, secure, dan cloud‑agnostic
+
+Mendukung AI modular (agent, prompt routing, knowledge base)
+
+Siap untuk Open Mainnet / production‑grade environment
+
+
+
+---
+
+🧱 Komponen Utama (K8s Level)
+
+1. Frontend (React / Next.js)
+
+Kubernetes Deployment
+
+Service (ClusterIP)
+
+Ingress (HTTPS)
+
+
+2. Backend API (Node.js / Python)
+
+Kubernetes Deployment
+
+Horizontal Pod Autoscaler (HPA)
+
+Service internal
+
+
+3. AI Core / Agent Engine
+
+Deployment terpisah per role:
+
+ai-router
+
+agent-core
+
+knowledge-service
+
+
+Isolasi resource (CPU / Memory)
+
+
+4. Knowledge Base
+
+ConfigMap (Markdown / JSON statis)
+
+Opsional: Volume + Object Storage
+
+
+5. Observability & Security
+
+Logging sidecar
+
+Metrics (Prometheus‑compatible)
+
+NetworkPolicy
+
+
+
+---
+
+📁 Struktur Manifest Kubernetes
+
+k8s/
+├── frontend/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+├── backend/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── hpa.yaml
+├── ai/
+│   ├── router-deployment.yaml
+│   ├── agent-deployment.yaml
+│   └── knowledge-deployment.yaml
+├── config/
+│   ├── configmap.yaml
+│   └── secrets.yaml
+├── security/
+│   ├── network-policy.yaml
+│   └── pod-security.yaml
+└── observability/
+    ├── metrics.yaml
+    └── logging.yaml
+
+
+---
+
+📦 Helm Chart Concept
+
+Struktur Helm
+
+helm/piverse-ai/
+├── Chart.yaml
+├── values.yaml
+├── values-prod.yaml
+├── templates/
+│   ├── frontend.yaml
+│   ├── backend.yaml
+│   ├── ai-router.yaml
+│   ├── agent-core.yaml
+│   ├── knowledge.yaml
+│   ├── ingress.yaml
+│   ├── hpa.yaml
+│   ├── configmap.yaml
+│   └── networkpolicy.yaml
+└── README.md
+
+values.yaml (contoh)
+
+frontend:
+  replicas: 2
+  image: piverse/frontend:latest
+
+backend:
+  replicas: 2
+  image: piverse/backend:latest
+
+ai:
+  router:
+    replicas: 1
+  agent:
+    replicas: 2
+  knowledge:
+    replicas: 1
+
+
+---
+
+🔐 Security by Design
+
+Secrets via Kubernetes Secret / Vault
+
+NetworkPolicy: isolate AI layer dari publik
+
+ReadOnlyRootFilesystem untuk AI container
+
+No private key / wallet data inside pods
+
+
+
+---
+
+📈 Scaling Strategy
+
+Layer	Strategy
+
+Frontend	Horizontal scaling
+Backend API	HPA (CPU / RPS)
+AI Agent	Queue‑based scaling
+Knowledge	Mostly read‑only
+
+
+
+---
+
+🔁 CI/CD Flow (Ringkas)
+
+1. Commit ke GitHub
+
+
+2. CI build & scan image
+
+
+3. Push ke registry
+
+
+4. Helm upgrade via CD pipeline
+
+
+5. Rolling update (zero downtime)
+
+
+
+
+---
+
+🧠 Alignment dengan Pi Ecosystem
+
+Tidak bergantung pada centralized provider
+
+Siap dijalankan di community‑run nodes
+
+Mendukung transparansi & auditability
+
+
+
+---
+
+> Kubernetes deployment ini dirancang untuk AI yang beretika, aman, dan tahan lama — selaras dengan nilai Pi Network dan komunitasnya.
